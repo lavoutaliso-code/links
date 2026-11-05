@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>lavou tá liso. — links</title>
+<meta name="description" content="Agende pelo site, pelo WhatsApp ou compre os produtos lavou tá liso.">
+<meta name="theme-color" content="#14D8E7">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@600&display=swap" rel="stylesheet">
+<!-- Pixel "Site Lavou ta liso" (o mesmo do site de agendamento). Só conta visita e
+     qual botão foi tocado; nenhum dado pessoal vai junto. -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','https://connect.facebook.net/en_US/fbevents.js');
+fbq('init','1129317775676037');
+fbq('track','PageView');
+</script>
+<style>
+  :root{
+    --cy:#14D8E7; --cyd:#0BB6C6; --ink:#08343D; --soft:#5E7C83; --mist:#E4F6F8;
+    --bg:#F6FBFC; --card:#FFFFFF; --line:rgba(8,52,61,.08);
+  }
+  @media (prefers-color-scheme: dark){
+    :root{ --ink:#FFFFFF; --soft:#93A0A5; --mist:#1B2A2E; --bg:#0F1315; --card:#1A2023; --line:rgba(255,255,255,.08); }
+  }
+  *{box-sizing:border-box;margin:0;padding:0;-webkit-tap-highlight-color:transparent}
+  html,body{min-height:100%}
+  body{
+    background:var(--bg); color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"SF Pro Text","SF Pro Display","Helvetica Neue",Arial,sans-serif;
+    -webkit-font-smoothing:antialiased;
+    display:flex; justify-content:center;
+    padding:calc(48px + env(safe-area-inset-top)) 16px calc(32px + env(safe-area-inset-bottom));
+  }
+  main{width:100%; max-width:440px; display:flex; flex-direction:column; align-items:center}
+  .logo{
+    width:104px; height:104px; border-radius:50%; background:var(--cy);
+    display:flex; align-items:center; justify-content:center; text-align:center;
+    font-family:'Fredoka',-apple-system,sans-serif; font-weight:600; color:#fff;
+    font-size:22px; line-height:1.02; letter-spacing:-.3px;
+    box-shadow:0 10px 30px rgba(20,216,231,.35);
+  }
+  h1{margin-top:18px; font-size:22px; font-weight:700; letter-spacing:-.4px}
+  .sub{margin-top:6px; font-size:15px; color:var(--soft); text-align:center; line-height:1.4}
+  nav{width:100%; margin-top:32px; display:flex; flex-direction:column; gap:12px}
+  a.bt{
+    display:flex; align-items:center; gap:14px; text-decoration:none; color:var(--ink);
+    background:var(--card); border:1px solid var(--line); border-radius:18px;
+    padding:16px 18px; min-height:72px;
+    box-shadow:0 1px 2px rgba(8,52,61,.04), 0 8px 24px rgba(8,52,61,.05);
+    transition:transform .15s ease, box-shadow .15s ease;
+  }
+  a.bt:active{transform:scale(.98)}
+  a.bt.principal{background:var(--cy); border-color:transparent; color:#06323A}
+  a.bt.principal .txt small{color:rgba(6,50,58,.72)}
+  .ic{
+    flex:none; width:40px; height:40px; border-radius:12px; background:var(--mist);
+    display:flex; align-items:center; justify-content:center;
+  }
+  a.bt.principal .ic{background:rgba(255,255,255,.35)}
+  .ic svg{width:22px; height:22px}
+  .ic.emo{font-size:24px; line-height:1}
+  .txt{flex:1; display:flex; flex-direction:column; gap:2px}
+  .txt b{font-size:17px; font-weight:600; letter-spacing:-.2px}
+  .txt small{font-size:13px; color:var(--soft)}
+  .seta{flex:none; opacity:.35; font-size:20px}
+  footer{margin-top:36px; font-size:13px; color:var(--soft)}
+  footer a{color:inherit}
+</style>
+</head>
+<body>
+<main>
+  <div class="logo" aria-hidden="true">lavou<br>tá liso.</div>
+  <h1>lavou tá liso.</h1>
+  <p class="sub">📍 Belo Horizonte · O salão nº 1 em alisamento</p>
+
+  <nav>
+    <a class="bt principal" id="b-site" href="https://lavoutaliso-code.github.io/agende/?origem=instagram-bio">
+      <span class="ic emo" aria-hidden="true">🗓️</span>
+      <span class="txt"><b>Agendar em 1 minuto pelo site!</b><small>Escolha o dia e o horário na hora</small></span>
+      <span class="seta">›</span>
+    </a>
+    <a class="bt" id="b-wpp" href="https://wa.me/5531993421299?text=Oi!%20Vim%20pelo%20Instagram%20%F0%9F%92%9C%20Quero%20agendar%20meu%20hor%C3%A1rio">
+      <span class="ic"><svg viewBox="0 0 24 24" fill="#25D366"><path d="M12 2a10 10 0 0 0-8.6 15.1L2 22l5-1.3A10 10 0 1 0 12 2zm0 18.2a8.2 8.2 0 0 1-4.2-1.2l-.3-.2-3 .8.8-2.9-.2-.3A8.2 8.2 0 1 1 12 20.2zm4.5-6.1c-.2-.1-1.5-.7-1.7-.8-.2-.1-.4-.1-.6.1l-.8 1c-.1.2-.3.2-.5.1a6.7 6.7 0 0 1-3.3-2.9c-.2-.4.2-.4.7-1.3.1-.2 0-.3 0-.4l-.8-1.8c-.2-.5-.4-.4-.6-.4h-.5a1 1 0 0 0-.7.3 3 3 0 0 0-.9 2.2 5.2 5.2 0 0 0 1.1 2.8 11.9 11.9 0 0 0 4.6 4c1.7.7 2.4.8 3.2.7.5-.1 1.5-.6 1.8-1.2.2-.6.2-1.1.1-1.2l-.4-.2z"/></svg></span>
+      <span class="txt"><b>Agendar pelo WhatsApp</b><small>Fale com a gente e tire suas dúvidas</small></span>
+      <span class="seta">›</span>
+    </a>
+    <a class="bt" id="b-loja" href="https://www.lavoutaliso.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=links">
+      <span class="ic emo" aria-hidden="true">🛍️</span>
+      <span class="txt"><b>Comprar produtos</b><small>Kit de progressiva para usar em casa</small></span>
+      <span class="seta">›</span>
+    </a>
+  </nav>
+
+  <footer><a href="https://www.instagram.com/lavoutaliso/">@lavoutaliso</a></footer>
+</main>
+
+<script>
+// ETIQUETA POR POST: quem chega com ?de=passoapasso (link do stories de um post
+// impulsionado) leva essa etiqueta pros três caminhos — site, WhatsApp e loja —
+// pra cada agendamento/compra dizer de qual post veio. Sem ?de, a etiqueta é "bio".
+(function(){
+  var de = '';
+  try { de = (new URLSearchParams(location.search).get('de') || '').toLowerCase().replace(/[^a-z0-9-]/g,'').slice(0,30); } catch(e){}
+  if (de) {
+    var site = document.getElementById('b-site');
+    site.href = 'https://agendeaquilavoutaliso.netlify.app/?origem=instagram-' + de;
+    var wpp = document.getElementById('b-wpp');
+    wpp.href = 'https://wa.me/5531993421299?text=' + encodeURIComponent('Oi! Vim pelo Instagram 💜 Quero agendar meu horário (#' + de + ')');
+    var loja = document.getElementById('b-loja');
+    loja.href = 'https://www.lavoutaliso.com.br/?utm_source=instagram&utm_medium=bio&utm_campaign=' + de;
+  }
+  // qual botão foi tocado vai pro pixel; se o pixel falhar, o link abre igual
+  function marca(id, evento){
+    document.getElementById(id).addEventListener('click', function(){
+      try { if (window.fbq) fbq('track', evento, { content_name: id.replace('b-','') + (de ? '-' + de : '') }); } catch(e){}
+    });
+  }
+  marca('b-site','ViewContent'); marca('b-wpp','Contact'); marca('b-loja','ViewContent');
+})();
+</script>
+</body>
+</html>
