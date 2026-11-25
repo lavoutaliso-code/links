@@ -79,7 +79,7 @@ fbq('track','PageView');
   <p class="sub">📍 Belo Horizonte · O salão nº 1 em alisamento</p>
 
   <nav>
-    <a class="bt principal" id="b-site" href="https://lavoutaliso-code.github.io/agende/?origem=instagram-bio">
+    <a class="bt principal" id="b-site" href="https://lavou-backend-production.up.railway.app/agendar?origem=instagram-bio">
       <span class="ic emo" aria-hidden="true">🗓️</span>
       <span class="txt"><b>Agendar em 1 minuto pelo site!</b><small>Escolha o dia e o horário na hora</small></span>
       <span class="seta">›</span>
@@ -108,7 +108,9 @@ fbq('track','PageView');
   try { de = (new URLSearchParams(location.search).get('de') || '').toLowerCase().replace(/[^a-z0-9-]/g,'').slice(0,30); } catch(e){}
   if (de) {
     var site = document.getElementById('b-site');
-    site.href = 'https://agendeaquilavoutaliso.netlify.app/?origem=instagram-' + de;
+    // 25/11/2026: o site saiu da Netlify (conta pausada por limite de uso) e passou
+    // a ser servido pelo mesmo servidor do backend. A etiqueta continua igual.
+    site.href = 'https://lavou-backend-production.up.railway.app/agendar?origem=instagram-' + de;
     var wpp = document.getElementById('b-wpp');
     wpp.href = 'https://wa.me/5531993421299?text=' + encodeURIComponent('Oi! Vim pelo Instagram 💜 Quero agendar meu horário (#' + de + ')');
     var loja = document.getElementById('b-loja');
